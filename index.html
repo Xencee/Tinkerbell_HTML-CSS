@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Pizza Order Form</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="form">
+		<h1>Pizza Order</h1>
+
+		<form action="processform.js" method="post">
+
+			<label for="fname">First name: </label><input type="text" id ="fname" name="fname"><br>
+
+      <label for="lname">Last name: </label><input type="text" id ="lname" name="lname"><br>
+      
+      <h2>Crust Type</h2>
+      
+      <input type="radio" name="crust" id="regular" value="regular" checked><label for="regular">Regular</label>
+      
+      <input type="radio" name="crust" id="thin" value="thin"><label for="thin">Thin</label>
+      
+      <input type="radio" name="crust" id="thick" value="thick"><label for="thick">Thick</label><br>
+
+      <h2>Preferred Options</h2>
+      
+      <label> <input type="checkbox" name="cheese"> Cheese </label>
+
+      <label> <input type="checkbox" name="pepperoni"> Pepperoni </label>
+
+      <label> <input type="checkbox" name="sausage"> Sausage </label>
+
+      <label> <input type="checkbox" name="mushroom"> Mushroom </label>
+
+      <label> <input type="checkbox" name="onions"> Onions </label>
+
+      <h2> Order Instructions </h2>
+      
+      <label> Doneness<br>
+        
+        <textarea name="instructions" form="pizzaform" cols="60" rows="2" placeholder="how brown would you like it?">
+        </textarea>
+        </label> <br>
+
+      <label> Delivery:<br>
+        <textarea name="instructions" form="pizzaform" cols="60" rows="5">
+        </textarea>
+        </label> <br> <br>
+
+      <input type="submit" value="Submit Form">
+      
+    </form>
+    </div>
+  </body>
+</html>
