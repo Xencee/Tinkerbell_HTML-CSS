@@ -1,0 +1,20 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("Pizza3.jpg");
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: contain;
+ 
+}
+
+.form {
+  opacity: 0.5;
+  margin: 90px;
+  background-color: #ffffff;
+}
+
+h1 {
+  height:100px;
+  text-align:center;
+  color:black;
+}
