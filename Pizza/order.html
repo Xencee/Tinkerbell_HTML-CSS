@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Order - Hartie's Pizza</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="banner">
+		<div class="navigation">
+			<ul>
+				<li><a href="./index.html"> Home </a></li>
+				<li><a class="active" href="./order.html"> Order </a></li>
+				<li><a href="./catering.html"> Catering </a></li>
+				<li><a href="./contact.html"> Contact </a></li>
+				<li class="image"><img src="logo.png"></li>
+			</ul>
+		</div>
+
+		<h1>PLACE YOUR ORDER...</h1>
+	</div>
+
+  <div class="form">
+
+		<h2>Menu Options</h2>
+
+		<nav>
+			<ul>
+				<li><a href="#pizza">Deep Dish Pizza</a></li>
+				<li><a href="#pizza">Flat Bread Pizza</a></li>
+				<li><a href="#desserts">Desserts</a></li>
+				<li><a href="#drinks">Drinks</a></li>
+			</ul>
+		</nav>
+	</div>
+
+  <hr>
+  <div class="pizza">
+		<h2 id="pizza">Pizzas</h2>
+
+		<h3>Crust</h3>
+
+		<input type="radio" name="crust" id="regular" value="regular" checked><label for="regular">Regular</label>
+      
+      <input type="radio" name="crust" id="thin" value="thin"><label for="thin">Thin</label>
+      
+      <input type="radio" name="crust" id="thick" value="thick"><label for="thick">Thick</label><br><br>
+
+      <h3>Cheese Preference</h3>
+      
+      <input type="radio" name="cheese" id="full" value="full" checked><label for="full">Full Cheese</label>
+      
+      <input type="radio" name="cheese" id="low" value="low" checked><label for="low">Low Fat Cheese</label>
+      
+      <input type="radio" name="cheese" id="vegan" value="vegan" checked><label for="vegan">Vegan</label><br><br>
+
+      <h3>Toppings</h3>
+      
+      <label> <input type="checkbox" name="cheese"> Cheese </label>
+
+      <label> <input type="checkbox" name="pepperoni"> Pepperoni </label>
+
+      <label> <input type="checkbox" name="sausage"> Sausage </label>
+
+      <label> <input type="checkbox" name="mushroom"> Mushroom </label>
+
+      <label> <input type="checkbox" name="onions"> Onions </label><br><br>
+
+      <label> <input type="checkbox" name="pineapple"> Pineapple </label>
+
+      <label> <input type="checkbox" name="greenpepper"> Green Pepper </label>
+
+      <label> <input type="checkbox" name="bacon"> Bacon </label>
+
+      <label> <input type="checkbox" name="spinach"> Spinach </label><br><br> 
+  </div>
+
+       <hr>
+       <div class="desserts">
+        <h2 id="desserts">Desserts</h2>
+
+      <label> <input type="checkbox" name="cheesecake"> Cheesecake </label>
+
+      <label> <input type="checkbox" name="brownie"> Brownie </label>
+
+      <label> <input type="checkbox" name="cookie"> Skillet Cookie </label><br><br>
+
+      <label> <input type="checkbox" name="cupcake"> Cupcake </label>
+
+      <label> <input type="checkbox" name="chocolate strawberries"> Chocolate Strawberries </label><br><br>
+      
+
+      <div class="drink"><h2 id="drinks">Drinks</h2>
+
+      <label> <input type="checkbox" name="pepsi"> Pepsi </label>
+
+      <label> <input type="checkbox" name="orange juice"> Orange Juice </label>
+
+      <label> <input type="checkbox" name="milk"> Milk </label>
+
+      <label> <input type="checkbox" name="grape juice"> Grape juice </label><br><br>
+      </div>
+      </div>
+
+       <hr>
+       <div class="instructions">
+         <h2> Order Instructions </h2>
+
+      <form action="processform.js" method="post">
+
+			<label for="fname">First & Last name:</label>
+      <input type="text" id ="fname" name="fname"><br><br>
+
+      <label for="mobile">Mobile or Telephone Number:</label>
+      <input type="text" id ="mobile" name="mobile" required pattern="[0-9]{7,10}"><br><br>
+
+      <label> Delivery Address:
+        <textarea name="address" form="pizzaform" cols="60" rows="5"></textarea>
+        </label><br><br>
+      
+      <label> More Details:
+        <textarea name="instructions" form="pizzaform" cols="60" rows="5" placeholder="Got any delivery instructions?"></textarea>
+        </label><br><br>
+        </div>
+
+      <input type="submit" value="Submit Form" class="submit">
+      
+    </form>
+   </body>
+</html>
