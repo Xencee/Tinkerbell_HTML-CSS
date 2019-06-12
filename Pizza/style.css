@@ -1,11 +1,14 @@
+
+/* home.html */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lucida Console", Monaco, monospace;
   /* background-image: url("Pizza3.jpg"); */
   background-position: top;
   background-repeat:no-repeat;
   background-size: inherit;
-  margin: 50px;
-  
+  margin: 0 20% 0 20%;
+  border: 1px solid rgb(230, 227, 227);
+  padding: 10px;
 }
 
 .banner {
@@ -20,6 +23,7 @@ body {
   background-image: url("http://elainespizza.com/facebookimages/Pizza3.jpg");
   background-size: cover;
   background-position: 0% 50%;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
   content: "";
   display: block;
   position: absolute;
@@ -28,7 +32,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .navigation {
@@ -62,34 +66,221 @@ body {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: rgb(161, 1, 1);
+.navigation li img {
+  display: block;
+  height: 70px;
+  width: 170px;
+  margin: -10px 10px 5px; 
+  /* padding: 16px; */
 }
 
-.active {
-  background-color: #4CAF50;
+li a:hover:not(.active) {
+  background-color: rgb(182, 176, 176);
+}
+
+li a.active {
+  background-color: rgb(223, 13, 13);
+  color: white;
 }
 
 h1 {
+  font-family: 'Pacifico', cursive;
   height:100px;
   text-align:center;
-  color:rgb(46, 44, 44);
+  font-size: 50px;
+  color:rgb(53, 50, 50);
+}
+
+.menu {
+margin: 0 10% 0 10%;
 }
 
 .menu li {
+  margin: 0 10% 0 10%;
   display: inline-block;
   border-style: solid;
-  border-color: crimson;
+  border-color: rgba(220, 20, 60, 0.377);
 }
 
 .menu li {
-  /* border: 5px rgb(248, 7, 7); */
-  width: 200px;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  text-align: center;
+  height:50px;
+  width: 180px;
   padding: 50px;
   margin: 10px;
 }
 
 
 .menu li img {
-height: 150px;
+  height: 150px;
+  width: 200px;
+  border-style: solid;
+  border-color: rgb(165, 158, 160);
+}
+
+
+
+
+/* order.html */
+input[type=text], textarea, datalist select {
+    width: 70%;
+    padding: 15px;
+    margin: 0 20% 0 20%;
+    /* display: inline-block; */
+    border: none;
+    background: #f1f1f1;
+}
+
+.submit {
+  width: 73.5%;
+  padding: 15px;
+  margin: 0 25% 5% 20%;
+  background: #04ac1a;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px
+}
+
+.form {
+  background-image: url("https://banner2.kisspng.com/20180704/rep/kisspng-shopping-cart-computer-icons-clip-art-place-order-5b3d5c67a9b2b9.6832075215307480076951.jpg");
+  background-repeat:repeat;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+.pizza {
+  background-image: url("https://www.cicis.com/wp-content/uploads/2019/04/pizza_categoryheader.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+.desserts {
+  background-image: url("https://thecolumbuspage.com/wp-content/uploads/Refreshments-and-drinks.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+.instructions {
+  background-image: url("http://www.castigliasva.com/locations/front-royal/images/castiglias-free-delivery-vespa.png");
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+
+
+/* catering.html */
+#slideshow {
+  width: 700px; 
+  height: 500px; 
+  overflow: hidden; 
+  position: relative; 
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  padding: 5px;
+  margin: 2% 5% 2% 7%;
+  }
+
+#slideshow img{ 
+  position:absolute; 
+  width: 700px; 
+  height: 500px;
+  }
+
+@keyframes cycle {
+  0% { opacity: 0; } 
+  100%{ opacity: 1; }
+}
+
+.slide14 {
+  animation:cycle 5s 65s linear infinite;
+  /* animation-delay:0s; */
+  }
+.slide13 {
+  animation:cycle 5s 60s linear infinite;
+  /* animation-delay:5s; */
+  }
+.slide12 {
+  animation:cycle 5s 55s linear infinite;
+  /* animation-delay:10s; */
+  }
+.slide11 {
+  animation:cycle 5s 50s linear infinite;
+  /* animation-delay:15s; */
+  }
+.slide10 {
+  animation:cycle 5s 45s linear infinite;
+  /* animation-delay:20s; */
+  }
+.slide9 {
+  animation:cycle 5s 40s linear infinite;
+  /* animation-delay:25s; */
+  } 
+.slide8 {
+  animation:cycle 5s 35s linear infinite;
+  /* animation-delay:30s; */
+  }
+.slide7 {
+  animation:cycle 5s 30s linear infinite;
+  /* animation-delay:35s; */
+  }
+.slide6 {
+  animation:cycle 5s 25s linear infinite;
+  /* animation-delay:40s; */
+  }
+.slide5 {
+  animation:cycle 5s 20s linear infinite;
+  /* animation-delay:45s; */
+  }
+.slide4 {
+  animation:cycle 5s 15s linear infinite;
+  /* animation-delay:50s; */
+  }
+.slide3 {
+  animation:cycle 5s 10s linear infinite;
+  /* animation-delay:55s; */
+  }
+.slide2 {
+  animation:cycle 5s 5s linear infinite;
+  /* animation-delay:60s; */
+  }
+.slide1 {
+  animation:cycle 5s 0s linear infinite;
+  /* animation-delay:65s; */
+  }
+
+
+
+
+/* contact.html */
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(245, 238, 237, 0.712);
+  /* font-weight: bold; */
+}
+
+.directions {
+  float: left;
+  margin: 0 0 2% 2%;
+}
+
+section {
+  float: right; 
+  margin: 5% 22% 0 0;
 }
