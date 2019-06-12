@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Catering - Hartie's Pizza</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="banner">
+		<div class="navigation">
+			<ul>
+				<li><a href="./index.html"> Home </a></li>
+				<li><a href="./order.html"> Order </a></li>
+				<li><a href="./catering.html"> Catering </a></li>
+				<li><a class="active" href="./contact.html"> Contact </a></li>
+				<li class="image"><img src="logo.png"></li>
+			</ul>
+		</div>
+    
+  <h1> CONTACT US </h1>
+  </div>
+
+  <h3> Send us a message </h3>
+  <br>
+
+  <label for="issue">What is this about?</label>
+  <input type="text" list="issues" id="issue" name="issue">
+
+  <datalist id="issues">
+    <option value="Compliment"></option>
+    <option value="Complaint"></option>
+    <option value="Suggestion"></option>
+    <option value="Question"></option>
+    <option value="Other"></option> 
+  </datalist>
+
+  <div class="details">
+    <label for="contact-first-name">First Name:</label>
+    <input type="text" aria-required="true" id="contact-first-name" name="FirstName" minlength="2">
+  </div>
+
+  <div class="details">
+    <label for="contact-last-name">Last Name:</label>
+    <input type="text" aria-required="true" id="contact-last-name" name="LastName" minlength="2">
+  </div>
+
+  <div class="details">
+    <label for="contact-email">Email:</label>
+    <input type="text" aria-required="true" id="contact-email" name="Email" minlength="2">
+  </div>
+
+  <div class="details">
+    <label for="address">Address:</label>
+    <textarea type="text" aria-required="true" id="address" name="Address" rows="3" cols="30"></textarea>
+  </div>
+  
+  <div class="details">
+    <label for="comment">Enter your comment or question:</label>
+    <textarea type="text" aria-required="true" id="comment" name="Comment" rows="7" cols="50"></textarea>
+  </div>
+
+<hr>
+
+<h3> Reach Out To Us </h3>
+
+<ul class="contact">
+  <div class="directions">
+  <!-- <li class="icons">
+    <img src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-line/254000/87-512.png" height="20"/>
+  </li> -->
+  <li class="contact-details">
+    <br>Directions on Google Maps<br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.4425934257756!2d-71.45044938499743!3d41.79722507922865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e44f660fca6f9f%3A0x5258b0f4cc6089a0!2sCranston+Public+Library%3A+Arlington+Branch!5e0!3m2!1sen!2sus!4v1560262801559!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+  </li>
+  </div>
+
+  <section>  
+  <li class="icons">
+    <br><img src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-line/245532/72-512.png" height="30"/>
+    </li>
+  <li class="contact-details">
+    Cranston Public Library<br>
+    140 Sockanosset Cross Rd<br>
+    Cranston, RI<br>
+    02920<br><br>
+  </li>
+ 
+  <li class="icons">
+    <img src="https://cdn4.iconfinder.com/data/icons/colorful-design-basic-icons-1/550/contact_email_red-512.png" height="30"/>
+  </li>
+  <li class="contact-details">
+    info@hartiespizza.com<br><br>
+  </li>
+
+  <li class="icons">
+    <img src="https://cdn0.iconfinder.com/data/icons/education-collection-2/32/dial_connect_phone_number_contact_connect_circle-512.png" height="30"/>
+  </li>
+  <li class="contact-details">
+    (401) 400-0000<br>
+  </li>
+  </section>
+</ul>
+	
+  </body>
+</html>
