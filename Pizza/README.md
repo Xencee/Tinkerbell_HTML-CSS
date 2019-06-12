@@ -1,4 +1,4 @@
-Pizza Website
+# Pizza Website
 
 Hartie's Pizza is a first attempt to create a dummy website mainly from HTML and CSS. 
 The pages are made up of forms, animations, navigation links, and mostly all the basics of HTML and CSS.
