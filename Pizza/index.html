@@ -4,57 +4,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Pizza Order Form</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Hartie's Pizza</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <div class="banner">
+		<div class="navigation">
+			<ul>
+				<li><a class="active" href="./index.html"> Home </a></li>
+        <li><a href="./order.html"> Order </a></li>
+				<li><a href="./catering.html"> Catering </a></li>
+				<li><a href="./contact.html"> Contact </a></li>
+        <li><a><em> Cooking since 1950 </em></a></li>
+        <!-- <li class="image"><img src="logo.png"></li> -->
+			</ul>
+		</div>
 
-	<div class="form">
-		<h1>Pizza Order</h1>
+		<h1> HARTIE'S PIZZA HOUSE </h1>
 
-		<form action="processform.js" method="post">
+	</div>
+	<p> </p>
+	<p> In 1956, Grandma Hartie killed her first chicken! She was so traumatised by the event that she poured her pain into making the most delcious pizza anyone had ever tasted. Ermmm.. that's not true. Grandma Hartie never hurt an animal in her life, but she does make the most delicious pizzas you ever tasted. She passed those recipes down and with every generation, her signature dishes have gotten even better. Don't believe us? Go ahead and try one, we dare you...</p>
 
-			<label for="fname">First name: </label><input type="text" id ="fname" name="fname"><br>
-
-      <label for="lname">Last name: </label><input type="text" id ="lname" name="lname"><br>
-      
-      <h2>Crust Type</h2>
-      
-      <input type="radio" name="crust" id="regular" value="regular" checked><label for="regular">Regular</label>
-      
-      <input type="radio" name="crust" id="thin" value="thin"><label for="thin">Thin</label>
-      
-      <input type="radio" name="crust" id="thick" value="thick"><label for="thick">Thick</label><br>
-
-      <h2>Preferred Options</h2>
-      
-      <label> <input type="checkbox" name="cheese"> Cheese </label>
-
-      <label> <input type="checkbox" name="pepperoni"> Pepperoni </label>
-
-      <label> <input type="checkbox" name="sausage"> Sausage </label>
-
-      <label> <input type="checkbox" name="mushroom"> Mushroom </label>
-
-      <label> <input type="checkbox" name="onions"> Onions </label>
-
-      <h2> Order Instructions </h2>
-      
-      <label> Doneness<br>
-        
-        <textarea name="instructions" form="pizzaform" cols="60" rows="2" placeholder="how brown would you like it?">
-        </textarea>
-        </label> <br>
-
-      <label> Delivery:<br>
-        <textarea name="instructions" form="pizzaform" cols="60" rows="5">
-        </textarea>
-        </label> <br> <br>
-
-      <input type="submit" value="Submit Form">
-      
-    </form>
-    </div>
+	<p> What would you like today? </p>
+	
+  <div class="menu">
+		<ul>
+			<li><a href="./order.html"> Deep Dishes <img src="https://www.recipegirl.com/wp-content/uploads/2018/03/Chicago-Style-Deep-Dish-Pizza-RecipeGirl-5.jpg" height="20px"/> </a></li>
+			<li><a href="./order.html"> Flat Breads <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-keto-pizza-073-1544039876.jpg?crop=0.668xw:1.00xh;0.233xw,0.00255xh&resize=768:*" height="20px"/> </a></li>
+			<li><a href="./order.html"> Desserts <img src="https://images-gmi-pmc.edge-generalmills.com/817d708a-33e6-46f7-b985-0360b6c55cf4.jpg" height="20px"/> </a></li>
+      <li><a href="./order.html"> Drinks <img src="https://indaily.com.au/wp-content/uploads/2018/05/Soft-drinks-Coke-850x455.jpg" height="20px"/> </a></li>
+    </ul>
+  </div>
+	
   </body>
 </html>
